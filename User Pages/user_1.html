@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user_1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header of webpage-->
+    <header>
+        <picture class="logo">
+            <source srcset="small_logo.png" media="(max-width: 800px)">
+            <source srcset="full_logo.png" media="(max-width: 1500px)">
+            <img src="full_logo.png" style="width:auto;">
+        </picture>
+
+        <section class="search">
+            <input type="search" placeholder="Search" id="search_bar" style="padding-left:40px;"/>
+        </section>
+    </header>
+
+    <!--Side menu shown if screen is large.-->
+    <section class="sidemenu">
+        <form>
+            <h1>Filter by</h1>
+            <h2>Year</h2>
+                <input type="radio" id="year1" name="year" value="2024">
+                <label for="year1">2024</label><br>
+                <input type="radio" id="year2" name="year" value="2023">
+                <label for="year2">2023</label><br>
+                <input type="radio" id="year3" name="year" value="2022">
+                <label for="year3">2022</label><br>
+                <input type="radio" id="year4" name="year" value="2021">
+                <label for="year4">2021</label><br><br>
+
+                <hr class="divide">
+
+            <h2>Program</h2>
+                <input type="radio" id="prog1" name="program" value="CS">
+                <label for="prog1">Computer Science</label><br>
+                <input type="radio" id="prog2" name="program" value="IT">
+                <label for="prog2">Information Technology</label><br>
+                <input type="radio" id="prog3" name="program" value="IS">
+                <label for="prog3">Information System</label><br>
+        </form>
+    </section>
+
+    <!--Upper menu is shown if screen is small-->
+    <section class="uppermenu">
+        <h1>Filter by</h1>
+        <section class="year">
+            <button class="yrButton">Year</button>
+            <div class="yrContent">
+                <option value="2024">2024</option>
+                <option value="2024">2023</option>
+                <option value="2024">2022</option>
+                <option value="2024">2021</option>
+            </div>
+        </section>
+
+        <section class="program">
+            <button class="progButton">Program</button>
+            <div class="progContent">
+                <option value="CS">Computer Science</option>
+                <option value="IT">Information Technology</option>
+                <option value="IS">Information System</option>
+            </div>
+        </section>
+    </section>
+
+    <!--This is where list of papers are shown.-->
+    <!--itutuloy ko po once alam ko pa paano database to website huhu-->
+    <section class="papers">
+        <h1>Recently Added</h1>
+
+        <section class="papers_list">
+
+        </section>
+    </section>
+
+    
+    
+</body>
+</html>
