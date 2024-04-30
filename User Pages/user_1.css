@@ -40,13 +40,13 @@ header{
 /*Side menu properties (for larger screens)*/
 .sidemenu{
     background-color: #DFE1E5;
-    height: 100vmin;
+    height: 76vh;
     width: 20%;
     margin-left: 3%;
-    margin-bottom: 3%;
     margin-right: 3%;
     border-radius: 10px;
     float: left;
+    display: block;
 }
 
 hr.divide {
@@ -126,7 +126,82 @@ hr.divide {
     display:block
 }
 
-/*Para responsive kuno ayiie*/
+/*List of papers properties*/
+.papers{
+    display:block;
+    float:left;
+}
+
+.added h1{
+    color: #592871;
+    margin:0;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.papers_list{
+    display: block;
+}
+
+.papers_1{
+    background-color: #ECECEC;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.papers_2{
+    background-color: #F9F9F9;
+    border-radius: 10px;
+    padding: 1%;
+    margin: 20px 0;
+}
+
+.title{
+    margin: 5px;
+    font-size: larger;
+}
+
+
+.date, .paper_program{
+    margin: 5px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.paper_program{
+    color:#592871;
+}
+
+.date::after {
+    content: "|";
+    margin-left: 16px;
+}
+
+.date, .paper_program{
+    display:inline;
+}
+
+.papers_list p{
+    margin: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+}
+
+#scroll {
+    height: 69vh;
+    overflow: auto;
+}
+
+#content {
+    height: auto;
+}
+
+
+/* Responsiveness */
 @media (max-width: 1150px) {
     .sidemenu {
         display: none;
@@ -135,6 +210,31 @@ hr.divide {
     header{
         margin-bottom: 30px;
     }
+
+    .added h1{
+        margin-left: 3%;
+    }
+
+    .papers{
+        margin: 3%;
+        margin-top: 5px;
+        margin-bottom: 0;
+        width: 80vw;
+    }
+
+    .papers_1, .papers_2{
+        width: 84vw;
+        height: auto;
+    }
+
+    #scroll{
+        width: 90vw;
+    }
+
+    #content{
+        width: 85vw;
+    }
+
 
 }
 
@@ -147,13 +247,22 @@ hr.divide {
         margin-bottom: 50px;
     }
 
-}
+    .papers{
+        width: 70vw;
+    }
 
-/*List of papers properties*/
-.papers{
-    margin-left:3%;
-}
+    .papers_1, .papers_2{
+        width: 65vw;
+        height: auto;
+    }
 
-.papers h1{
-    color: #592871;
+    #scroll{
+        width: 70vw;
+
+    }
+
+    #content{
+        width: 65vw;
+    }
+
 }
