@@ -1,0 +1,182 @@
+body{
+    background-color: #F4F4F4;
+    font-family: "Inter Tight", sans-serif;
+}
+
+/*Header properties (logo, search)*/
+.logo{
+    float: left;
+}
+
+.logo img{
+    height: 50%;
+    max-height: 65px;
+    width: auto;
+}
+
+#search_bar{
+    float: right;
+    max-width: 300px;
+    width: 50%;
+    height: 40px;
+    margin-top: 1%;
+    background-color: #DFE1E5;
+    border-color: #F4F4F4;
+    border-radius: 100px;
+    background-image: url('../Uploads/magnifying-glass.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: 7px;
+}
+
+header{
+    margin: 3%;
+    margin-bottom: 5%;
+    height: 45px;
+    display: block;
+}
+
+/* Scrollbar configs */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F4F4F4; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8F4DA2; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #592871; 
+    border-radius: 10px;
+}
+
+/*Path Menu*/
+.path{
+    margin-left: 3%;
+    margin-top: 30px;
+}
+
+.path h1{
+    margin: 0 8px;
+    display: inline;
+    font-size: medium;
+    font-weight: normal;
+}
+
+
+#home:hover, #program:hover, #year:hover{
+    text-decoration: underline;
+    color:#532B72;
+}
+
+/*Buttons*/
+.borrow{
+    color: #532B72;
+    margin-left: 3%;
+    margin-top: 30px;  
+}
+
+.program{
+    margin: 0;
+    margin-right: 20px;
+    display: inline-block;
+    font-size: x-large;
+    padding: 3px 15px;
+    border:#532B72;
+    border-width:3px;
+    border-style:solid;
+    border-radius: 43px;
+}
+
+.borrowBtn{
+    display: inline-block;
+    background-color: #532B72;
+    color: #F4F4F4;
+    font-size: large;
+    padding: 7.5px 50px;
+    border-radius: 43px;
+    font-weight: normal;
+}
+
+.preview{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.title{
+    width: 80vw; /*para if mahaba yung title*/
+    margin-bottom: 10px;
+}
+
+.properties h2, .date{
+    font-weight: normal;
+    display: inline;
+    font-size: medium;
+}
+
+.date::after{
+    content: "|";
+    margin: 16px;
+}
+
+.authors h1{
+    font-weight: normal;
+    font-size: small;
+    color:#532B72;
+    margin-bottom: 5px;
+    margin-top: 30px;
+}
+
+.authors h2{
+    font-weight: normal;
+    font-size: small;
+    margin:0;
+}
+
+hr.divide {
+    border-top: 2px solid #bbb;
+    margin-top: 20px;
+}
+
+.text h1{
+    font-size: x-large;
+}
+
+.text p{
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+/*When screen is small*/
+@media (max-width: 650px) {
+    .path{
+        margin-top: 30px;
+        overflow:hidden;
+
+    }
+}
+
+/*When screen is smaller*/
+@media (max-width: 320px){
+    .borrow{
+
+        margin-top: 10px;  
+    }
+
+    .program{
+        font-size: large;
+        margin-right: 10px;
+    }
+    
+    .borrowBtn{
+        font-size: medium;
+        padding: 7.5px 35px;
+    }
+}

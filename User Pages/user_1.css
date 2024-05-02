@@ -23,7 +23,7 @@ body{
     background-color: #DFE1E5;
     border-color: #F4F4F4;
     border-radius: 100px;
-    background-image: url('magnifying-glass.png');
+    background-image: url('../Uploads/magnifying-glass.png');
     background-position: left center;
     background-repeat: no-repeat;
     background-size: 25px;
@@ -126,6 +126,26 @@ hr.divide {
     display:block
 }
 
+/* Scrollbar configs */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F4F4F4; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #8F4DA2; 
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #592871; 
+    border-radius: 10px;
+  }
+
 /*List of papers properties*/
 .papers{
     display:block;
@@ -147,6 +167,7 @@ hr.divide {
     background-color: #ECECEC;
     border-radius: 10px;
     padding: 1%;
+    cursor: pointer;
 }
 
 .papers_2{
@@ -154,6 +175,11 @@ hr.divide {
     border-radius: 10px;
     padding: 1%;
     margin: 20px 0;
+    cursor: pointer;
+}
+
+.papers_1:hover, .papers_2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .title{
@@ -168,6 +194,7 @@ hr.divide {
     margin-bottom: 12px;
     font-size: 15px;
     font-weight: normal;
+    display:inline;
 }
 
 .paper_program{
@@ -177,10 +204,6 @@ hr.divide {
 .date::after {
     content: "|";
     margin-left: 16px;
-}
-
-.date, .paper_program{
-    display:inline;
 }
 
 .papers_list p{
