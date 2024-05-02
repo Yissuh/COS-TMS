@@ -6,6 +6,7 @@ body{
 /*Header properties (logo, search)*/
 .logo{
     float: left;
+    cursor: pointer;
 }
 
 .logo img{
@@ -74,6 +75,7 @@ header{
 #home:hover, #program:hover, #year:hover{
     text-decoration: underline;
     color:#532B72;
+    cursor: pointer;
 }
 
 /*Buttons*/
