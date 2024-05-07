@@ -89,8 +89,10 @@ require_once 'fetch_upload.php';
     <script>
         $('picture.logo').on('click', function(e){
             e.preventDefault();
-            window.location.href=$(this).data('link');
-        })
+            var baseUrl = '<?php echo "http://" . $_SERVER['HTTP_HOST'] . "/csa/index.php"; ?>';
+            window.location.href = baseUrl;
+        });
+
 
         $('#home').on('click', function(e){
             e.preventDefault();
